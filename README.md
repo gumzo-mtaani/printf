@@ -47,4 +47,5 @@ No known bugs.
 ## Authors :black_nib:
 
 **Paul Njuga** [Github](https://github.com/Paul-Njuga)
+
 **John Ngatia** [Github](https://github.com/gumzo-mtaani)
