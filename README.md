@@ -32,7 +32,15 @@ This directory implements a custom printf in C.
 
 Directories | Description
 ----------- | -----------
+[test](./test) | Test folder containing [main.c](./test/main.c) test file
 [main.h](./main.h) | C header file that contains function prototypes
+[_print.c](./_print.c) | C function that produces output according to a format
+[f_get_print.c](./f_get_print.c) | C function that handles the right print function passed
+[f_print_alpha.c](./f_print_alpha.c) | C function that handles strings & characters
+[f_print_special.c](./f_print_special.c) | C function that handles special cases
+[f_print_nums.c](./f_print_nums.c) | C function that handles integers
+[f_conv.c](./f_conv.c) | C function that converts the number & base into strings
+[f_write.c](./f_write.c) | C function that writes strings & characters to stdout
 
 ## Quick start :runner:
 

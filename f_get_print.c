@@ -17,11 +17,13 @@ int (*get_print(char s))(va_list)
 	ph func_arr[] = {
 		{'c', print_char},
 		{'s', print_string},
-		{'%', print_percent}
+		{'%', print_percent},
+		{'d', print_int},
+		{'i', print_int}
 	};
 
 	/* spec keeps count of specifiers */
-	int spec = 3;
+	int spec = 5;
 
 	register int i;
 
