@@ -49,7 +49,7 @@ int print_int(va_list list)
 
 /**
  * print_unsigned_int - prints an unsigned integer
- * @l: va_list of arguments from _printf
+ * @list: va_list of arguments from _printf
  *
  * Return: number of char printed
  */
