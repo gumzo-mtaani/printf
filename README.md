@@ -40,6 +40,7 @@ Directories | Description
 [f_print_special.c](./f_print_special.c) | C function that handles special cases
 [f_print_nums.c](./f_print_nums.c) | C function that handles integers
 [f_conv.c](./f_conv.c) | C function that converts the number & base into strings
+[f_print_bases.c](./f_print_bases.c) | C function that converts a number to a specified base
 [f_write.c](./f_write.c) | C function that writes strings & characters to stdout
 
 ## Quick start :runner:

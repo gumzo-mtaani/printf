@@ -25,9 +25,6 @@ int _printf(const char *format, ...);
 /* Get print function */
 int (*get_print(char s))(va_list);
 
-/* Conversion function */
-char *conv(unsigned int num, int base);
-
 /* Alpha functions */
 int print_char(va_list list);
 int print_string(va_list list);
@@ -39,6 +36,12 @@ void print_num(int n);
 
 /* Special cases function */
 int print_percent(va_list list);
+
+/* Conversion function */
+char *conv(unsigned int num, int base);
+
+/* Base functions */
+int print_binary(va_list list);
 
 /* Write functions */
 int _putchar(char c);
