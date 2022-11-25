@@ -33,10 +33,10 @@ int main(void)
 
 	_printf("Unsigned octal:[%o]\n", ui);
 	printf("Unsigned octal:[%o]\n", ui);
-	
+
 	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	
+
 	_printf("Percent:[%%]\n");
 	printf("Percent:[%%]\n");
 

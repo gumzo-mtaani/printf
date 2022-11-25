@@ -33,11 +33,6 @@ int _printf(const char *format, ...)
 		if (*p == '%')
 		{
 			p++; /* Mv to nxt char aftr % */
-			if (*p == '%') /* print '%' */
-			{
-				count += _putchar('%');
-				continue;
-			}
 			pfunc = get_print(*p);
 
 			/* If not in get_print, print whatever char was inputed */
