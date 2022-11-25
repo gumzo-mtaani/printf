@@ -27,7 +27,7 @@ int print_S(va_list list)
 	char *s = va_arg(list, char *);
 
 	if (!s)
-		return (_puts("(NULL)"));
+		return (_puts("(null)"));
 
 	for (i = 0; s[i]; i++)
 	{
