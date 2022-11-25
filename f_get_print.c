@@ -18,18 +18,18 @@ int (*get_print(char s))(va_list)
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_percent},
-		/*{'d', print_int}, */
-		/*{'i', print_int}, */
-		/*{'b', print_binary}, */
-		/*{'u', print_unsigned_int}, */
-		/*{'o', print_octal}, */
-		/*{'x', print_hex}, */
-		/*{'X', print_HEX}, */
-		/*{'S', print_S} */
+		{'i', print_int},
+		{'u', print_unsigned_int},
+		{'o', print_octal},
+		{'d', print_int},
+		{'x', print_hex},
+		{'b', print_binary},
+		{'X', print_HEX},
+		{'S', print_S}
 	};
 
 	/* spec keeps count of specifiers */
-	int spec = 3;
+	int spec = 11;
 
 	register int i;
 
