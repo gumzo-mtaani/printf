@@ -48,7 +48,7 @@ int print_int(va_list list)
 }
 
 /**
- * print_unsigned - prints an unsigned integer
+ * print_unsigned_int - prints an unsigned integer
  * @l: va_list of arguments from _printf
  *
  * Return: number of char printed
@@ -56,7 +56,7 @@ int print_int(va_list list)
 int print_unsigned_int(va_list list)
 {
 	unsigned int u = va_arg(list, unsigned int);
-	char *str = convert(u, 10);
+	char *str = conv(u, 10);
 
 	return (_puts(str));
 }
