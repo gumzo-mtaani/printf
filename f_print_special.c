@@ -35,7 +35,7 @@ int print_S(va_list list)
 		{
 			_puts("\\x"); /* Prints \x */
 			count += 2; /* Jump to after \x */
-			res = convert(s[i], 16, 0); /* Convert to HEX */
+			res = conv(s[i], 16, 0); /* Convert to HEX */
 			if (!res[1])
 				count += _putchar('0');
 			count += _puts(res);
