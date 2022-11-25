@@ -24,11 +24,12 @@ int (*get_print(char s))(va_list)
 		{'u', print_unsigned_int},
 		{'o', print_octal},
 		{'x', print_hex},
-		{'X', print_HEX}
+		{'X', print_HEX},
+		{'S', print_S}
 	};
 
 	/* spec keeps count of specifiers */
-	int spec = 10;
+	int spec = 11;
 
 	register int i;
 

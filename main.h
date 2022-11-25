@@ -46,6 +46,7 @@ int print_HEX(va_list list);
 
 /* Special cases function */
 int print_percent(va_list list);
+int print_S(va_list list);
 
 /* Write functions */
 int _putchar(char c);
