@@ -36,7 +36,7 @@ int count_num(int i);
 void print_num(int n);
 
 /* Conversion function */
-char *conv(unsigned int num, int base);
+char *conv(unsigned int num, int base, int lowercase);
 
 /* Base functions */
 int print_binary(va_list list);
