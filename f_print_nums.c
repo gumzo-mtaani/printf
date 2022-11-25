@@ -14,9 +14,14 @@ int count_num(int i)
 	int d;
 
 	if (i < 0)
+	{
 		d = i * (-1);
+		c++; /* Account for the -ve sign */
+	}
 	else
+	{
 		d = i;
+	}
 
 	while (d != 0)
 	{
