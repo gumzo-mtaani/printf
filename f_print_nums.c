@@ -56,7 +56,7 @@ int print_int(va_list list)
 int print_unsigned_int(va_list list)
 {
 	unsigned int u = va_arg(list, unsigned int);
-	char *str = conv(u, 10);
+	char *str = conv(u, 10, 0);
 
 	return (_puts(str));
 }
