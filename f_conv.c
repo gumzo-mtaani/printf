@@ -4,16 +4,19 @@
  * conv - converts number and base into strings
  * @num : number to convert
  * @base : base to convert to
+ * @lowercase : flag if hex values need to be lowercase
  *
  * Return: converted string
  */
-char *conv(unsigned int num, int base)
+char *conv(unsigned int num, int base, int lowercase)
 {
 	static char *rep;
 	static char buffer[50];
 	char *ptr;
 
-	rep = "0123456789ABCDEF";
+	rep = (lowercase)
+		? "0123456789abcdef"
+		: "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
 
