@@ -34,7 +34,7 @@ Directories | Description
 ----------- | -----------
 [test](./test) | Test folder containing [main.c](./test/main.c) test file
 [main.h](./main.h) | C header file that contains function prototypes
-[_print.c](./_print.c) | C function that produces output according to a format
+[_printf.c](./_printf.c) | C function that produces output according to a format
 [f_get_print.c](./f_get_print.c) | C function that handles the right print function passed
 [f_print_alpha.c](./f_print_alpha.c) | C function that handles strings & characters
 [f_print_special.c](./f_print_special.c) | C function that handles special cases
