@@ -40,6 +40,9 @@ char *conv(unsigned int num, int base, int lowercase);
 
 /* Base functions */
 int print_binary(va_list list);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_HEX(va_list list);
 
 /* Special cases function */
 int print_percent(va_list list);
