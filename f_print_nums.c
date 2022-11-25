@@ -10,8 +10,8 @@
 int count_num(int i)
 {
 	/* Return value */
-	int c = 0;
-	int d;
+	unsigned int c = 0;
+	unsigned int d;
 
 	if (i < 0)
 	{
@@ -48,13 +48,27 @@ int print_int(va_list list)
 }
 
 /**
+ * print_unsigned - prints an unsigned integer
+ * @l: va_list of arguments from _printf
+ *
+ * Return: number of char printed
+ */
+int print_unsigned_int(va_list list)
+{
+	unsigned int u = va_arg(list, unsigned int);
+	char *str = convert(u, 10);
+
+	return (_puts(str));
+}
+
+/**
  * print_num - helper function that loops through
  * an integer and prints all its digits
  * @n: integer to be printed
  */
 void print_num(int n)
 {
-	int nm;
+	unsigned int nm;
 
 	if (n < 0)
 	{

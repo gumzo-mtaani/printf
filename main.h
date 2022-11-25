@@ -31,17 +31,18 @@ int print_string(va_list list);
 
 /* Num functions */
 int print_int(va_list list);
+int print_unsigned_int(va_list list);
 int count_num(int i);
 void print_num(int n);
-
-/* Special cases function */
-int print_percent(va_list list);
 
 /* Conversion function */
 char *conv(unsigned int num, int base);
 
 /* Base functions */
 int print_binary(va_list list);
+
+/* Special cases function */
+int print_percent(va_list list);
 
 /* Write functions */
 int _putchar(char c);

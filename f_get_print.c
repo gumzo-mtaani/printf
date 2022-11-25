@@ -20,11 +20,12 @@ int (*get_print(char s))(va_list)
 		{'%', print_percent},
 		{'d', print_int},
 		{'i', print_int},
-		{'b', print_binary}
+		{'b', print_binary},
+		{'u', print_unsigned_int}
 	};
 
 	/* spec keeps count of specifiers */
-	int spec = 6;
+	int spec = 7;
 
 	register int i;
 
