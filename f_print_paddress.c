@@ -14,7 +14,7 @@ int print_paddress(va_list list)
 	register int count = 0; /* Return value */
 
 	if (!p)
-		return (_puts("(null)")); /* Null pointer */
+		return (_puts("null")); /* Null pointer */
 
 	/* Lowercase hex since we're representing pointers */
 	str = conv(p, 16, 1);
