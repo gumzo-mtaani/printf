@@ -11,7 +11,7 @@ int print_paddress(va_list list)
 	char *str;
 	unsigned long int p = va_arg(list, unsigned long int);
 
-	register unsigned long int count = 0; /* Return value */
+	register int count = 0; /* Return value */
 
 	if (!p)
 		return (_puts("(nil)")); /* Null pointer */
