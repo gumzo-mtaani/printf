@@ -12,7 +12,7 @@
  *
  * Return: a pointer to the matching printing function
  */
-int (*get_print(char s))(va_list)
+int (*get_print(char s))(va_list, flag *)
 {
 	ph func_arr[] = {
 		{'c', print_char},

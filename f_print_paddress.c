@@ -3,16 +3,19 @@
 /**
  * print_paddress - prints address of input in HEX format
  * @list: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
  *
  * Return: number of char printed
  */
-int print_paddress(va_list list)
+int print_paddress(va_list list, flag *f)
 {
 	char *str;
 	unsigned long int p = va_arg(list, unsigned long int);
 
 	register int count = 0; /* Return value */
 
+	(void)f; /* Unused flag */
 	if (!p)
 		return (_puts("(nil)")); /* Null pointer */
 

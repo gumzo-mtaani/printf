@@ -3,12 +3,15 @@
 /**
  * print_percent - prints a percentage sign
  * @list: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
  *
  * Return: number of char printed
  */
-int print_percent(va_list list)
+int print_percent(va_list list, flag *f)
 {
-	(void)list;
+	(void)list; /* Unused list */
+	(void)f; /* Unused flag */
 	return (_putchar('%'));
 }
 
@@ -17,15 +20,18 @@ int print_percent(va_list list)
  * are printed this way: \x, followed by the ASCII code value,
  * in hexadecimal (upper case - always 2 characters)
  * @list: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
  *
  * Return: number of char printed
  */
-int print_S(va_list list)
+int print_S(va_list list, flag *f)
 {
 	int i, count = 0;
 	char *res;
 	char *s = va_arg(list, char *);
 
+	(void)f; /* Unused flag */
 	if (!s)
 		return (_puts("(null)")); /* Null string */
 
