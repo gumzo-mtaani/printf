@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 	const char *p;	/* p saves the address in format pointer */
 
 	va_list arguments;
+	flag flags = {0, 0, 0}; /* Initialise to 0 (False) */
 
 	register int count = 0;	/* Return value */
 
@@ -33,6 +34,8 @@ int _printf(const char *format, ...)
 		if (*p == '%')
 		{
 			p++; /* Mv to nxt char aftr % */
+			while (get_flag(*p, &flags)) /* Set flags */
+				p++; /* Mv to nxt char aftr flag */
 			pfunc = get_print(*p);
 
 			/* If not in get_print, print whatever char was inputed */
