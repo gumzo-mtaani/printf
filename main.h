@@ -36,6 +36,9 @@ typedef struct printHandler
 /* Custom printf */
 int _printf(const char *format, ...);
 
+/* Get flag function */
+int get_flag(char s, flag *);
+
 /* Get print function */
 int (*get_print(char s))(va_list, flag *);
 
