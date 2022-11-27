@@ -34,13 +34,20 @@ int count_num(int i)
 /**
  * print_int - prints an integer
  * @list: va_list args from _printf
+ * @f: pointer to the struct flags determining
+ * if a flag is passed to _printf
  *
  * Return: number of char printed
  */
-int print_int(va_list list)
+int print_int(va_list list, flag *f)
 {
 	int num = va_arg(list, int);
 	int c = count_num(num);
+
+	if (f->space == 1 && f->plus == 0 && num >= 0)
+		c += _putchar(' ');
+	if (f->plus == 1 && num >= 0)
+		c += _putchar('+');
 
 	print_num(num);
 	return (c);
@@ -50,14 +57,17 @@ int print_int(va_list list)
 /**
  * print_unsigned_int - prints an unsigned integer
  * @list: va_list of arguments from _printf
+ * @f: pointer to the struct flags determining
+ * if a flag is passed to _printf
  *
  * Return: number of char printed
  */
-int print_unsigned_int(va_list list)
+int print_unsigned_int(va_list list, flag *f)
 {
 	unsigned int u = va_arg(list, unsigned int);
 	char *str = conv(u, 10, 0);
 
+	(void)f; /* Unused flag */
 	return (_puts(str));
 }
 
