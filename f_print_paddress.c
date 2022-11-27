@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_paddress - prints address of input in hex format
+ * print_paddress - prints address of input in HEX format
  * @list: va_list arguments from _printf
  *
  * Return: number of char printed
@@ -16,9 +16,9 @@ int print_paddress(va_list list)
 	if (!p)
 		return (_puts("(nil)")); /* Null pointer */
 
-	/* Lowercase hex since we're representing pointers */
-	str = conv(p, 16, 1);
-	count += _puts("0x"); /* 0x(hex value) */
+	/* Uppercase HEX since we're representing pointers */
+	str = conv(p, 16, 0);
+	count += _puts("0x"); /* 0x(HEX value) */
 	count += _puts(str);
 	return (count);
 }
