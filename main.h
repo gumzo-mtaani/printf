@@ -30,7 +30,7 @@ typedef struct printHandler
 	char c;
 
 	/* Callback function */
-	int (*f)(va_list ap, flag *f);
+	int (*f)(va_list ap, flag *);
 } ph;
 
 /* Custom printf */
