@@ -44,6 +44,9 @@ int print_octal(va_list list);
 int print_hex(va_list list);
 int print_HEX(va_list list);
 
+/* Pointer function */
+int print_paddress(va_list list);
+
 /* Special cases function */
 int print_percent(va_list list);
 int print_S(va_list list);

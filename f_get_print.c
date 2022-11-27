@@ -25,11 +25,12 @@ int (*get_print(char s))(va_list)
 		{'x', print_hex},
 		{'b', print_binary},
 		{'X', print_HEX},
-		{'S', print_S}
+		{'S', print_S},
+		{'p', print_paddress}
 	};
 
 	/* spec keeps count of specifiers */
-	int spec = 11;
+	int spec = 12;
 
 	register int i;
 
