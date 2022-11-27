@@ -11,7 +11,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int (*pfunc)(va_list);	/* Callback function */
+	int (*pfunc)(va_list, flag *);	/* Callback function */
 	const char *p;	/* p saves the address in format pointer */
 
 	va_list arguments;
@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 
 			/* If not in get_print, print whatever char was inputed */
 			count += (pfunc)
-				? pfunc(arguments)
+				? pfunc(arguments, &flags)
 				: _printf("%%%c", *p);
 		}
 		else
