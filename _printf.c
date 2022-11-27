@@ -11,8 +11,8 @@
  */
 int _printf(const char *format, ...)
 {
-	int (*pfunc)(va_list, flag *);	/* Callback function */
-	const char *p;	/* p saves the address in format pointer */
+	int (*pfunc)(va_list, flag *);	/* var to hold get_print return */
+	const char *p;	/* p saves the address in *format */
 
 	va_list arguments;
 	flag flags = {0, 0, 0}; /* Initialise to 0 (False) */
