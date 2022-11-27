@@ -27,14 +27,14 @@ int print_S(va_list list)
 	char *s = va_arg(list, char *);
 
 	if (!s)
-		return (_puts("(null)"));
+		return (_puts("(null)")); /* Null string */
 
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] > 0 && (s[i] < 32 || s[i] >= 127))
 		{
 			_puts("\\x"); /* Prints \x */
-			count += 2; /* Jump to after \x */
+			count += 2; /* Account for \x */
 			res = conv(s[i], 16, 0); /* Convert to HEX */
 			if (!res[1])
 				count += _putchar('0');
