@@ -17,8 +17,7 @@ int print_paddress(va_list list)
 		return (_puts("(nil)")); /* Null pointer */
 
 	/* Uppercase HEX since we're representing pointers */
-	str = conv(p, 16, 1);
-	count += _puts("0x"); /* 0x(HEX value) */
+	str = conv(p, 16, 0);
 	count += _puts(str);
 	return (count);
 }
